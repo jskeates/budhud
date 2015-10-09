@@ -1,5 +1,5 @@
 "Resource/UI/HudMedicCharge.res"
-{	
+{
 	"ChargeLabelNearCrosshair" // Broken with vaccinator
 	{
 		"ControlName"	"CExLabel"
@@ -11,8 +11,8 @@
 		"tall"			"100"
 		"autoResize"	"1"
 		"pinCorner"		"2"
-		"visible"		"0" // Set to 1 to enable
-		"enabled"		"0" // Set to 1 to enable
+		"visible"		"1" // Set to 1 to enable
+		"enabled"		"1" // Set to 1 to enable
 		"tabPosition"	"0"
 		"labelText"		"#TF_UberchargeMinHUD"
 		"textAlignment"	"center"
@@ -20,7 +20,7 @@
 		"brighttext"	"0"
 		"font"			"LatoSemibold20"
 		"fgcolor"		"bh_white"
-	}	
+	}
 	"Background"
 	{
 		"ControlName"	"CTFImagePanel"
@@ -33,11 +33,11 @@
 		"visible"		"0"
 		"enabled"		"0"
 		"image"			"../hud/medic_charge_blue_bg"
-		"scaleImage"	"1"	
+		"scaleImage"	"1"
 		"teambg_2"		"../hud/medic_charge_red_bg"
-		"teambg_3"		"../hud/medic_charge_blue_bg"				
+		"teambg_3"		"../hud/medic_charge_blue_bg"
 	}
-	
+
 	"ChargeLabel"
 	{
 		"ControlName"	"CExLabel"
@@ -81,7 +81,7 @@
 		"fgcolor"		"bh_white"
 	}
 	"ChargeMeter"
-	{	
+	{
 		"ControlName"		"ContinuousProgressBar"
 		"fieldName"			"ChargeMeter"
 		"font"				"Default"
@@ -89,7 +89,7 @@
 		"ypos"				"c115"
 		"zpos"				"2"
 		"wide"				"100"
-		"tall"				"6"				
+		"tall"				"6"
 		"autoResize"		"0"
 		"pinCorner"			"0"
 		"visible"			"1"
@@ -99,10 +99,10 @@
 		"brighttext"		"0"
 		"fgcolor_override"	"bh_chargemeter"
 		"bgcolor_override"	"bh_gray"
-	}		
+	}
 
 	"ChargeMeter1"
-	{	
+	{
 		"ControlName"		"ContinuousProgressBar"
 		"fieldName"			"ChargeMeter1"
 		"font"				"Default"
@@ -110,7 +110,7 @@
 		"ypos"				"c111"
 		"zpos"				"2"
 		"wide"				"100"
-		"tall"				"3"			
+		"tall"				"3"
 		"autoResize"		"0"
 		"pinCorner"			"0"
 		"visible"			"1"
@@ -123,7 +123,7 @@
 	}
 
 	"ChargeMeter2"
-	{	
+	{
 		"ControlName"		"ContinuousProgressBar"
 		"fieldName"			"ChargeMeter2"
 		"font"				"Default"
@@ -131,7 +131,7 @@
 		"ypos"				"c114"
 		"zpos"				"2"
 		"wide"				"100"
-		"tall"				"3"				
+		"tall"				"3"
 		"autoResize"		"0"
 		"pinCorner"			"0"
 		"visible"			"1"
@@ -144,7 +144,7 @@
 	}
 
 	"ChargeMeter3"
-	{	
+	{
 		"ControlName"		"ContinuousProgressBar"
 		"fieldName"			"ChargeMeter3"
 		"font"				"Default"
@@ -152,7 +152,7 @@
 		"ypos"				"c117"
 		"zpos"				"2"
 		"wide"				"100"
-		"tall"				"3"			
+		"tall"				"3"
 		"autoResize"		"0"
 		"pinCorner"			"0"
 		"visible"			"1"
@@ -165,7 +165,7 @@
 	}
 
 	"ChargeMeter4"
-	{	
+	{
 		"ControlName"		"ContinuousProgressBar"
 		"fieldName"			"ChargeMeter4"
 		"font"				"Default"
@@ -184,7 +184,7 @@
 		"fgcolor_override"	"bh_white"
 		"bgcolor_override"	"bh_gray"
 	}
-	
+
 	"HealthClusterIcon"
 	{
 		"ControlName"	"ImagePanel"
@@ -196,9 +196,9 @@
 		"visible"		"0"
 		"enabled"		"0"
 		"image"			"../hud/ico_health_cluster"
-		"scaleImage"	"1"	
-	}	
-	
+		"scaleImage"	"1"
+	}
+
 	"ResistIcon"
 	{
 		"ControlName"	"ImagePanel"
@@ -211,6 +211,6 @@
 		"visible_minmode"		"0"
 		"enabled"		"1"
 		"image"			"../HUD/defense_buff_bullet_blue"
-		"scaleImage"	"1"	
+		"scaleImage"	"1"
 	}
 }
