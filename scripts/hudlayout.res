@@ -46,15 +46,17 @@
         
 		"labeltext"			"f"           			//Change this to use a different crosshair
 													//You can see the list of crosshairs in Crosshairs.png
+		"labeltext"			"f"           			// Change this to use a different crosshair
+													// You can see the list of crosshairs in Crosshairs.png
         
-        "font"				"CrosshairOLsmall"	    //Use "CrosshairOL" for a crosshair with an outline
-													//or "CrosshairAA" for a smooth crosshair w/o an outline 
+        "font"				"CrosshairOLsmall"	    // Use "CrosshairOL" for a crosshair with an outline
+													// or "CrosshairAA" for a smooth crosshair w/o an outline 
                                      
-													//You can add "Small" or "Big" at the end to change the size
-													//e.g. "CrosshairOLSmall"
+													// You can add "Small" or "Big" at the end to change the size
+													// e.g. "CrosshairOLSmall"
         
-        "fgcolor"			"ya_crosshair"      		//Color is changed via the clientscheme
-													//in the "/resource/" folder
+        "fgcolor"			"ya_crosshair"      	// Color is changed via the clientscheme
+													// in the "/resource/" folder
 	}
 	
 	/////////////////////////////////////////////////////////////////////////////
@@ -672,39 +674,34 @@
 		"wide"						"1910"
 		"tall"						"1070"
 	}			
-				
+
 	HudDemomanCharge			
 	{			
 		"fieldName"					"HudDemomanCharge"
 		"visible"					"1"
 		"enabled"					"1"
-		"xpos"						"c-49"
+		"xpos"						"c-51"
 		"ypos"						"c85" //c88
-		"wide"						"200"
+		"wide"						"101"
 		"tall"						"100"
 		"MeterFG"					"White"
 		"MeterBG"					"Gray"
 	}				
-			
+
 	HudBowCharge			
 	{			
 		"fieldName"					"HudBowCharge"
 		"visible"					"1"
 		"enabled"					"1"
-		"xpos"						"r80"	[$WIN32]
-		"xpos_minmode"				"r52"	[$WIN32]
-		"ypos"						"r21"	[$WIN32]
-		"ypos_minmode"				"r40"	[$WIN32]
-		"xpos"						"r112"	[$X360]
-		"ypos"						"r45"	[$X360]
+		"xpos"						"r80"
+		"ypos"						"r21"
 		"zpos"						"1"			// draw in front of ammo
 		"wide"						"60"
-		"wide_minmode"				"50"
 		"tall"						"8"
 		"MeterFG"					"White"
 		"MeterBG"					"Gray"
 	}			
-			
+
 	HudFlameRocketCharge			
 	{			
 		"fieldName"					"HudFlameRocketCharge"
@@ -723,7 +720,7 @@
 		"MeterFG"					"White"
 		"MeterBG"					"Gray"
 	}			
-			
+
 	HudBossHealth			
 	{			
 		"fieldName"					"HudBossHealth"
@@ -834,7 +831,7 @@
 		"visible" 					"0"
 		"enabled" 					"1"
 		"xpos"						"c-100"
-		"ypos"						"c40"
+		"ypos"						"c25"
 		"zpos"						"1"
 		"wide"	 					"600"
 		"tall"	 					"45"
@@ -1280,10 +1277,8 @@
 		"fieldName" 				"HudVoiceSelfStatus"
 		"visible"					"1"
 		"enabled" 					"1"
-		"xpos" 						"r42" 	[$WIN32]
-		"ypos" 						"355"	[$WIN32]
-		"xpos" 						"r75"	[$X360]
-		"ypos" 						"375"	[$X360]
+		"xpos" 						"r42"
+		"ypos" 						"355"
 		"wide" 						"32"
 		"tall" 						"32"
 	}
@@ -1293,17 +1288,15 @@
 		"fieldName" 				"HudVoiceStatus"
 		"visible" 					"1"
 		"enabled" 					"1"
-		"xpos" 						"r145" [$WIN32]
-		"ypos" 						"0" [$WIN32]
-		"xpos" 						"r210" [$X360]
-		"ypos" 						"0" [$X360]
+		"xpos" 						"r145"
+		"ypos" 						"0"
 		"wide" 						"145"
 		"tall" 						"400"
 
 		"item_wide"					"135"
 		
 		"show_avatar"				"0"
-				
+
 		"show_dead_icon"			"1"
 		"dead_xpos"					"1"
 		"dead_ypos"					"0"
@@ -1584,7 +1577,7 @@
 		"fieldName"					"HudDemomanPipes"
 		"visible"					"1"
 		"enabled"					"1"
-		"xpos"						"c-54"
+		"xpos"						"c-51"
 		"ypos"						"c105"
 		"wide"						"200"
 		"tall"						"100"

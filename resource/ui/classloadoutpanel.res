@@ -3,7 +3,7 @@
 	"bh_e_RED"
 	{
 		"ControlName"				"CExImageButton"
-		"fieldName"					"bhe_RED"
+		"fieldName"					"bh_e_RED"
 		"xpos"						"c10"
 		"ypos"						"23"
 		"zpos"						"12"	
@@ -38,7 +38,7 @@
 	"bh_e_BLU"
 	{
 		"ControlName"				"CExImageButton"
-		"fieldName"					"bhe_BLU"
+		"fieldName"					"bh_e_BLU"
 		"xpos"						"c-54"
 		"ypos"						"23"
 		"zpos"						"12"	
