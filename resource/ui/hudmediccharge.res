@@ -1,9 +1,16 @@
 "Resource/UI/HudMedicCharge.res"
 {
-	"ChargeLabelNearCrosshair" // Broken with vaccinator
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Medic Uber % Below Crosshair
+	// >> bh_xhairchargelabel
+	// ============================================================================================== //
+	// Shows uber percentage below your crosshair (broken with vaccinator)
+	// Set visible/enabled to 1 to enable
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	"bh_xhairchargelabel"
 	{
 		"ControlName"	"CExLabel"
-		"fieldName"		"ChargeLabelNearCrosshair"
+		"fieldName"		"bh_xhairchargelabel"
 		"xpos"			"c-100"
 		"ypos"			"c-35"
 		"zpos"			"2"
@@ -18,9 +25,12 @@
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
-		"font"			"LatoSemibold20"
+		"font"			"bh_Lato16"
 		"fgcolor"		"bh_white"
 	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+
 	"Background"
 	{
 		"ControlName"	"CTFImagePanel"
@@ -42,7 +52,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"ChargeLabel"
-		"xpos"			"c60"
+		"xpos"			"c65"
 		"ypos"			"301"
 		"zpos"			"2"
 		"wide"			"200"
@@ -56,7 +66,7 @@
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
-		"font"			"LatoSemibold48"
+		"font"			"bh_Lato48"
 		"fgcolor"		"bh_white"
 	}
 	"IndividualChargesLabel"
@@ -77,7 +87,7 @@
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
-		"font"			"LatoSemibold48"
+		"font"			"bh_Lato48"
 		"fgcolor"		"bh_white"
 	}
 	"ChargeMeter"
@@ -86,7 +96,7 @@
 		"fieldName"			"ChargeMeter"
 		"font"				"Default"
 		"xpos"				"c-50"
-		"ypos"				"c115"
+		"ypos"				"c108"
 		"zpos"				"2"
 		"wide"				"100"
 		"tall"				"6"
@@ -98,19 +108,18 @@
 		"dulltext"			"0"
 		"brighttext"		"0"
 		"fgcolor_override"	"bh_chargemeter"
-		"bgcolor_override"	"bh_gray"
+		"bgcolor_override"	"bh_chargemeterBG"
 	}
-
 	"ChargeMeter1"
 	{
 		"ControlName"		"ContinuousProgressBar"
 		"fieldName"			"ChargeMeter1"
 		"font"				"Default"
 		"xpos"				"c-50"
-		"ypos"				"c111"
+		"ypos"				"c99"
 		"zpos"				"2"
-		"wide"				"100"
-		"tall"				"3"
+		"wide"				"48"
+		"tall"				"6"
 		"autoResize"		"0"
 		"pinCorner"			"0"
 		"visible"			"1"
@@ -118,8 +127,8 @@
 		"textAlignment"		"Left"
 		"dulltext"			"0"
 		"brighttext"		"0"
-		"fgcolor_override"	"bh_white"
-		"bgcolor_override"	"bh_gray"
+		"fgcolor_override"	"bh_chargemeter"
+		"bgcolor_override"	"bh_chargemeterBG"
 	}
 
 	"ChargeMeter2"
@@ -127,11 +136,11 @@
 		"ControlName"		"ContinuousProgressBar"
 		"fieldName"			"ChargeMeter2"
 		"font"				"Default"
-		"xpos"				"c-50"
-		"ypos"				"c114"
+		"xpos"				"c2"
+		"ypos"				"c99"
 		"zpos"				"2"
-		"wide"				"100"
-		"tall"				"3"
+		"wide"				"48"
+		"tall"				"6"
 		"autoResize"		"0"
 		"pinCorner"			"0"
 		"visible"			"1"
@@ -139,8 +148,8 @@
 		"textAlignment"		"Left"
 		"dulltext"			"0"
 		"brighttext"		"0"
-		"fgcolor_override"	"bh_white"
-		"bgcolor_override"	"bh_gray"
+		"fgcolor_override"	"bh_chargemeter"
+		"bgcolor_override"	"bh_chargemeterBG"
 	}
 
 	"ChargeMeter3"
@@ -149,10 +158,10 @@
 		"fieldName"			"ChargeMeter3"
 		"font"				"Default"
 		"xpos"				"c-50"
-		"ypos"				"c117"
+		"ypos"				"c108"
 		"zpos"				"2"
-		"wide"				"100"
-		"tall"				"3"
+		"wide"				"48"
+		"tall"				"6"
 		"autoResize"		"0"
 		"pinCorner"			"0"
 		"visible"			"1"
@@ -160,8 +169,8 @@
 		"textAlignment"		"Left"
 		"dulltext"			"0"
 		"brighttext"		"0"
-		"fgcolor_override"	"bh_white"
-		"bgcolor_override"	"bh_gray"
+		"fgcolor_override"	"bh_chargemeter"
+		"bgcolor_override"	"bh_chargemeterBG"
 	}
 
 	"ChargeMeter4"
@@ -169,11 +178,11 @@
 		"ControlName"		"ContinuousProgressBar"
 		"fieldName"			"ChargeMeter4"
 		"font"				"Default"
-		"xpos"				"c-50"
-		"ypos"				"c120"
+		"xpos"				"c2"
+		"ypos"				"c108"
 		"zpos"				"2"
-		"wide"				"100"
-		"tall"				"3"
+		"wide"				"48"
+		"tall"				"6"
 		"autoResize"		"0"
 		"pinCorner"			"0"
 		"visible"			"1"
@@ -181,8 +190,8 @@
 		"textAlignment"		"Left"
 		"dulltext"			"0"
 		"brighttext"		"0"
-		"fgcolor_override"	"bh_white"
-		"bgcolor_override"	"bh_gray"
+		"fgcolor_override"	"bh_chargemeter"
+		"bgcolor_override"	"bh_chargemeterBG"
 	}
 
 	"HealthClusterIcon"

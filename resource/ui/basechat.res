@@ -7,7 +7,7 @@
 		"visible" 		        	"1"
 		"enabled" 		        	"1"
 		"xpos"			          	"5"
-		"ypos"			          	"5"				// Top Left = 0
+		"ypos"			          	"5"
 		"wide"	 		          	"240"
 		"tall"	 		          	"110"
 		"fgcolor"					"bh_white"
@@ -62,7 +62,7 @@
 		"enabled"		          	"1"
 		"labelText"		        	""
 		"textAlignment"		    	"south-west"
-		"font"			          	"LatoSemibold12"
+		"font"			          	"bh_Lato12"
 		"maxchars"		        	"-1"
 	}
 }

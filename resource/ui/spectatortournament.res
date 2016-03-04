@@ -10,25 +10,25 @@
 		"pinCorner"		"0"
 		"enabled"		"1"
 				
-		"team1_player_base_offset_x"		"c0"		// -367
-		"team1_player_base_y"				"200"		// 460
+		"team1_player_base_offset_x"		"c0"
+		"team1_player_base_y"				"120"
 		"team1_player_delta_x"				"0"
-		"team1_player_delta_y"				"-18"
-		"team2_player_base_offset_x"		"c0"		// 207
-		"team2_player_base_y"				"350"		// 460
+		"team1_player_delta_y"				"14"
+		"team2_player_base_offset_x"		"c0"	
+		"team2_player_base_y"				"275"
 		"team2_player_delta_x"				"0"
-		"team2_player_delta_y"				"-18"
+		"team2_player_delta_y"				"14"
 		
 		"playerpanels_kv"
 		{
 			"visible"		"0"
-			"wide"			"160"
-			"tall"			"18"
+			"wide"			"137"
+			"tall"			"14"
 			"zpos"			"1"
 		
 
 			
-			"color_ready"	"0 255 0 220"
+			"color_ready"		"0 255 0 220"
 			"color_notready"	"0 0 0 220"
 			
 			"tabPosition"	"0"
@@ -117,11 +117,11 @@
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"playername"
-				"font"			"LatoSemibold10"
-				"xpos"			"50"
-				"ypos"			"1"
+				"font"			"bh_Lato10"
+				"xpos"			"40"
+				"ypos"			"-1"
 				"zpos"			"5"
-				"wide"			"90"
+				"wide"			"67"
 				"tall"			"16"
 				"autoResize"	"0"
 				"pinCorner"		"0"
@@ -139,8 +139,8 @@
 				"xpos"			"0"
 				"ypos"			"1"
 				"zpos"			"2"
-				"wide"			"22"
-				"tall"			"22"
+				"wide"			"15"
+				"tall"			"15"
 				"visible"		"1"
 				"enabled"		"1"
 				"team1_image"			"../hud/class_scoutred"
@@ -166,20 +166,20 @@
 			
 			"HealthIcon"
 				{
-					"ControlName" "EditablePanel"
-					"fieldName" "HealthIcon"
-					"xpos" "18"
-					"ypos" "-6"
-					"zpos" "3"
-					"wide" "50"
-					"tall" "50"
-					"visible" "1"
-					"enabled" "1"
-					"HealthBonusPosAdj" "10"
-					"HealthDeathWarning" "0.49"
-					"TFFont" "HudFontSmallest"
-					"HealthDeathWarningColor" "HUDDeathWarning"
-					"TextColor" "HudOffWhite"
+					"ControlName" 				"EditablePanel"
+					"fieldName" 				"HealthIcon"
+					"xpos"						"10"
+					"ypos" 						"-7"
+					"zpos" 						"3"
+					"wide" 						"50"
+					"tall" 						"50"
+					"visible" 					"1"
+					"enabled" 					"1"
+					"HealthBonusPosAdj" 		"10"
+					"HealthDeathWarning" 		"0.49"
+					"TFFont" 					"HudFontSmallest"
+					"HealthDeathWarningColor" 	"HUDDeathWarning"
+					"TextColor" 				"HudOffWhite"
 				}
 			
 			"ReadyBG"
@@ -227,9 +227,9 @@
 			{
 				"ControlName"		"CExLabel"
 				"fieldName"			"respawntime"
-				"font"				"LatoSemibold14"
-				"xpos"				"19"
-				"ypos"				"-7"
+				"font"				"bh_Lato12"
+				"xpos"				"12"
+				"ypos"				"-8"
 				"zpos"				"5"
 				"wide"				"31"
 				"tall"				"30"
@@ -246,11 +246,11 @@
 				"ControlName"	"CExLabel"
 				"fieldName"		"healthcover"
 				"font"			"Blocks48"
-				"xpos"			"22"
+				"xpos"			"18"
 				"ypos"			"0"
 				"zpos"			"5"
-				"wide"			"26"
-				"tall"			"20"
+				"wide"			"20"
+				"tall"			"14"
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"1"
@@ -262,9 +262,9 @@
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"chargeamount"
-				"font"			"LatoSemibold12"
-				"xpos"			"125"
-				"ypos"			"2"
+				"font"			"bh_Lato14"
+				"xpos"			"105"
+				"ypos"			"0"
 				"zpos"			"6"
 				"wide"			"30"
 				"tall"			"13"
@@ -279,9 +279,9 @@
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"chargeamountBG"
-				"font"			"LatoSemibold12"
-				"xpos"			"126"
-				"ypos"			"3"
+				"font"			"bh_Lato14"
+				"xpos"			"105"
+				"ypos"			"1"
 				"zpos"			"6"
 				"wide"			"30"
 				"tall"			"13"
@@ -339,23 +339,23 @@
 	}
 	"ReinforcementsLabel"
 	{
-		"ControlName"		"CExLabel"
-		"fieldName"		"ReinforcementsLabel"
-		"xpos"			"c-300"	[$WIN32]
-		"ypos"			"50"	[$WIN32]
-		"wide"			"600"	[$WIN32]
-		"tall"			"24"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"labelText"		"#game_respawntime_in_secs"
-		"textAlignment"		"center"
-		"font"			"LatoSemibold24"
+		"ControlName"			"CExLabel"
+		"fieldName"				"ReinforcementsLabel"
+		"xpos"					"c-300"	[$WIN32]
+		"ypos"					"50"	[$WIN32]
+		"wide"					"600"	[$WIN32]
+		"tall"					"24"
+		"autoResize"			"0"
+		"pinCorner"				"0"
+		"visible"				"1"
+		"enabled"				"1"
+		"labelText"				"#game_respawntime_in_secs"
+		"textAlignment"			"center"
+		"font"					"bh_Lato24"
 		
 		if_mvm
 		{
-		"ypos"			"68"	[$WIN32]
+			"ypos"			"85"
 		}
 		
 	}
@@ -364,16 +364,16 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"BuyBackLabel"
 		"xpos"			"c-190"
-		"ypos"			"360"
+		"ypos"			"200"
 		"wide"			"380"
-		"tall"			"24"
+		"tall"			"400"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"0"
 		"enabled"		"1"
 		"labelText"		"#TF_PVE_Buyback"
 		"textAlignment"	"center"
-		"font"			"LatoSemibold20"
+		"font"			"bh_Lato14"
 		"wrap"			"1"
 		"centerwrap"	"1"
 	
@@ -507,7 +507,7 @@
 		{	
 			"ControlName"	"Label"
 			"fieldName"		"ItemLabel"
-			"font"			"LatoSemibold12"
+			"font"			"bh_Lato12"
 			"xpos"			"10"
 			"ypos"			"5"
 			"zpos"			"1"

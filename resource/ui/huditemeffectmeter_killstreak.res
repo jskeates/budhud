@@ -2,34 +2,34 @@
 {
 	HudItemEffectMeter
 	{
-		"fieldName"		"HudItemEffectMeter"
-		"visible"		"1"
-		"enabled"		"1"
-		"xpos"			"r75"
-		"ypos"			"c82"
-		"wide"			"100"
-		"tall"			"250"
-		"MeterFG"		"White"
-		"MeterBG"		"Gray"
+		"fieldName"				"HudItemEffectMeter"
+		"visible"				"1"
+		"enabled"				"1"
+		"xpos"					"r75"
+		"ypos"					"c82"
+		"wide"					"100"
+		"tall"					"250"
+		"MeterFG"				"bh_white"
+		"MeterBG"				"bh_gray"
 	}
 	
 	"ItemEffectMeterBG"
 	{
-		"ControlName"	"CTFImagePanel"
-		"fieldName"		"ItemEffectMeterBG"
-		"xpos"			"6969"
-		"ypos"			"6969"
-		"zpos"			"0"
-		"wide"			"76"
-		"tall"			"44"
-		"visible"		"0"
-		"enabled"		"0"
-		"image"			"../hud/misc_ammo_area_blue"
-		"scaleImage"	"1"	
-		"teambg_2"		"../hud/misc_ammo_area_red"
-		"teambg_2_lodef"	"../hud/misc_ammo_area_red_lodef"
-		"teambg_3"		"../hud/misc_ammo_area_blue"
-		"teambg_3_lodef"	"../hud/misc_ammo_area_blue_lodef"				
+		"ControlName"			"CTFImagePanel"
+		"fieldName"				"ItemEffectMeterBG"
+		"xpos"					"6969"
+		"ypos"					"6969"
+		"zpos"					"0"
+		"wide"					"76"
+		"tall"					"44"
+		"visible"				"0"
+		"enabled"				"0"
+		"image"					"../hud/misc_ammo_area_blue"
+		"scaleImage"			"1"	
+		"teambg_2"				"../hud/misc_ammo_area_red"
+		"teambg_2_lodef"		"../hud/misc_ammo_area_red_lodef"
+		"teambg_3"				"../hud/misc_ammo_area_blue"
+		"teambg_3_lodef"		"../hud/misc_ammo_area_blue_lodef"				
 	}
 	
 	"ItemEffectMeterLabel"
@@ -50,7 +50,7 @@
 		"textAlignment"			"center"
 		"dulltext"				"0"
 		"brighttext"			"0"
-		"font"					"LatoSemibold12"
+		"font"					"bh_Lato12"
 		"fgcolor_override"		"bh_white"
 	}
 
@@ -93,7 +93,7 @@
 		"textAlignment"			"north"
 		"dulltext"				"0"
 		"brighttext"			"0"
-		"font"					"LatoSemibold20"
+		"font"					"bh_Lato20"
 		"fgcolor_override"		"bh_white"
 	}
 }

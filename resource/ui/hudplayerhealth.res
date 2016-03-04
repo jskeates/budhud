@@ -1,12 +1,11 @@
 "Resource/UI/HudPlayerHealth.res"
 {	
-
-	/////////////////////////////////////////////////////////////////////////////
-	// AMMO PLACEMENT CUSTOMIZATION
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	// HEALTH PLACEMENT CUSTOMIZATION
 	// >> HudPlayerHealth
-	// ======================================================================= //
+	// ============================================================================================== //
 	// Moves the entirety of the health elements.
-	/////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	"HudPlayerHealth"
 	{
@@ -24,12 +23,13 @@
 		"HealthDeathWarningColor"	"HUDDeathWarning"
 	}	
 	
-	/////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Shows a team-colored bar under your health
 	// >> TeamIndicator
-	// ======================================================================= //
+	// ============================================================================================== //
 	// Set visible/enable to 1 to enable
-	/////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+
 	"TeamIndicator"
 	{
 		"ControlName"			"CTFImagePanel"
@@ -37,8 +37,8 @@
 		"xpos"					"70"
 		"ypos"					"68"
 		"zpos"					"-6969"
-		"wide"					"60"
-		"tall"					"6"
+		"wide"					"63"
+		"tall"					"4"
 		"autoresize"			"0"
 		"pinCorner"				"0"
 		"visible"				"0"
@@ -55,14 +55,17 @@
 		"draw_corner_height"	"0"
 	}	
 
-	/////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Health Cross
 	// >> PlayerStatusHealthImage; PlayerStatusHealthImageBG
-	// ======================================================================= //
+	// ============================================================================================== //
 	// Controls the health cross to the left of your numerical health value
-	// IMPORTANT: To disable, set visible and enabled to 0. Do not change x/ypos!
-	// This will cause various status effects to vanish.
-	/////////////////////////////////////////////////////////////////////////////
+	// IMPORTANT:
+	// PlayerStatusHealthImage: To disable, set visible and enabled to 0. Do not 
+	// change x/ypos! This will cause various status effects to vanish.
+	// PlayerStatusHealthImageBG: Set xpos/ypos to 6969 to disable.
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+
 	"PlayerStatusHealthImage"
 	{
 		"ControlName"	"ImagePanel"
@@ -92,13 +95,14 @@
 		"scaleImage"	"1"	
 	}
 	
-	/////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Health Cross Buff
-	// PlayerStatusHealthBonusImage
-	// ======================================================================= //
+	// >> PlayerStatusHealthBonusImage
+	// ============================================================================================== //
 	// Controls low health/buff over health cross
 	// Set xpos/ypos to 6969 to disable
-	/////////////////////////////////////////////////////////////////////////////
+	// Set xpos to 88 to position behind player health
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 	"PlayerStatusHealthBonusImage"
 	{
 		"ControlName"	"ImagePanel"
@@ -113,8 +117,8 @@
 		"image"			"../hud/health_over_bg"
 		"scaleImage"	"1"	
 	}
-	
-	/////////////////////////////////////////////////////////////////////////////
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	"PlayerStatusHealthValue"
 	{
@@ -129,7 +133,7 @@
 		"enabled"		"1"
 		"labelText"		"%Health%"
 		"textAlignment"	"center"	
-		"font"			"LatoSemibold48"
+		"font"			"bh_Lato48"
 		"fgcolor"		"bh_Health"
 	}
 	"PlayerStatusHealthValueBG"
@@ -145,7 +149,7 @@
 		"enabled"		"1"
 		"labelText"		"%Health%"
 		"textAlignment"	"center"	
-		"font"			"LatoSemibold48"
+		"font"			"bh_Lato48"
 		"fgcolor"		"bh_black"
 	}
 	"PlayerStatusBleedImage"

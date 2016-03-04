@@ -8,9 +8,10 @@
 		"delta_item_end_y"		"0"
 		"PositiveColor"			"bh_HealColor"
 		"NegativeColor"			"bh_DamageColor"
+		"EventColor"			"255 105 180 255"		// Pink uber drop color
 		"delta_lifetime"		"1.5"
-		"delta_item_font"		"LatoSemibold20Outline"
-		"delta_item_font_big"	"LatoSemibold20Outline"
+		"delta_item_font"		"bh_Lato20Outline"
+		"delta_item_font_big"	"bh_Lato20Outline"
 	}
 	
 	"DamageAccountValue"
@@ -27,7 +28,7 @@
 		"labelText"				"%metal%"
 		"textAlignment"			"center"
 		"fgcolor"				"bh_hudDMGDisplay"
-		"font"					"LatoSemibold24"
+		"font"					"bh_Lato24"
 	}
 	
 	"DamageAccountValueBG"
@@ -44,6 +45,6 @@
 		"labelText"				"%metal%"
 		"textAlignment"			"center"
 		"fgcolor"				"bh_black"
-		"font"					"LatoSemibold24"
+		"font"					"bh_Lato24"
 	}
 }

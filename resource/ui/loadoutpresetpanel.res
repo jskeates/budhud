@@ -15,7 +15,7 @@
 			"visible"					"0"
 			"enabled"					"1"
 			"tabPosition"				"0"
-			"font"						"LatoSemibold24"
+			"font"						"bh_Lato24"
 			"textAlignment"				"center"
 			"textinsetx"				"0"
 			"dulltext"					"0"
@@ -25,9 +25,6 @@
 			"sound_released"			"UI/buttonclickrelease.wav"
 			"centerwrap"				"1"
 			"paintbackground"			"1"
-			"border_default"			"bh_b_main"
-			"border_armed"				"bh_b_main"
-			"border_depressed"			"bh_b_main"
 		}			
 	}
 }

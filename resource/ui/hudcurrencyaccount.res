@@ -8,19 +8,19 @@
 		"ypos"					"0"
 		"zpos"					"0"
 		"wide"					"100"
-		"tall"					"20"
+		"tall"					"21"
 		"autoResize"			"0"
 		"pinCorner"				"0"
 		"visible"				"1"
 		"enabled"				"1"
-		"fillcolor"				"bh_BGStandard"
+		"border"				"BackpackItemGrayedOut"
 	}
 	
 	"CurrencyLabel"
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"CurrencyLabel"
-		"font"					"LatoSemibold14"
+		"font"					"bh_Lato14"
 		"fgcolor"				"bh_white"
 		"xpos"					"4"
 		"ypos"					"0"
@@ -33,11 +33,28 @@
 		"labelText"				"Currency"
 	}
 	
+	"CurrencyLabelShadow"
+	{
+		"ControlName"			"CExLabel"
+		"fieldName"				"CurrencyLabelShadow"
+		"font"					"bh_Lato14"
+		"fgcolor"				"bh_black"
+		"xpos"					"5"
+		"ypos"					"1"
+		"zpos"					"0"
+		"wide"					"50"
+		"tall"					"20"
+		"visible"				"1"
+		"enabled"				"1"
+		"textAlignment"			"west"	
+		"labelText"				"Currency"
+	}
+	
 	"Currency"
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"Currency"
-		"font"					"LatoSemibold14"
+		"font"					"bh_Lato14"
 		"fgcolor"				"bh_green"
 		"xpos"					"45"
 		"ypos"					"0"
@@ -49,6 +66,24 @@
 		"textAlignment"			"east"	
 		"labelText"				"%currency%"
 	}	
+	
+	"CurrencyShadow"
+	{
+		"ControlName"			"CExLabel"
+		"fieldName"				"CurrencyShadow"
+		"font"					"bh_Lato14"
+		"fgcolor"				"bh_black"
+		"xpos"					"46"
+		"ypos"					"1"
+		"zpos"					"0"
+		"wide"					"50"
+		"tall"					"20"
+		"visible"				"1"
+		"enabled"				"1"
+		"textAlignment"			"east"	
+		"labelText"				"%currency%"
+	}	
+	
 	"WhiteBG"
 	{
 		"ControlName"			"EditablePanel"

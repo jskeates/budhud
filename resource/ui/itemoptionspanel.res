@@ -77,7 +77,7 @@
 			"enabled"					"1"
 			"tabPosition"				"0"
 			"labelText"					"#TF_Item_SelectStyle"
-			"font"						"LatoSemibold14"
+			"font"						"bh_Lato14"
 			"textAlignment"				"center"
 			"dulltext"					"0"
 			"brighttext"				"0"
@@ -85,6 +85,10 @@
 			"sound_depressed"			"UI/buttonclick.wav"
 			"sound_released"			"UI/buttonclickrelease.wav"
 			"Command"					"set_style"
+			"PaintBackground"			"0"
+			
+			"defaultFgColor_override" 	"bh_white"
+			"armedFgColor_override" 	"bh_orange"
 			
 			"border_default"			"NoBorder"
 			"border_armed"				"NoBorder"

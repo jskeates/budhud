@@ -1,14 +1,15 @@
 "Resource/HudLayout.res"
 {
-	/////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 	// HEALTH PLACEMENT CUSTOMIZATION
-	// Controlled in resource\ui\hudplayerhealth.res, not here
-	/////////////////////////////////////////////////////////////////////////////
+	// ============================================================================================== //
+	// Controlled in resource\ui\hudplayerhealth.res
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	/////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 	// TRANSPARENT VIEWMODELS (only works for dx9 users)
 	// See: \budhud\_Customization_\Transparent Viewmodels for instructions
-	/////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	"TransparentViewmodelMask"
 	{
@@ -25,43 +26,72 @@
 		"scaleImage"	"1"
 	}
 	
-	/////////////////////////////////////////////////////////////////////////////
-	// whayay's Crosshair (thanks whayay!)
-	// See: \budhud\_Customization\Custom Crosshairs for instructions
-	/////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	// whayay's Crosshairs
+	// ============================================================================================== //
+	// See: \budhud\_Customization\Custom Crosshairs for instructions / images
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	"Crosshair"
+	"whayay_crosshair"
 	{
         "controlname"		"CExLabel"
-		"fieldname"			"Crosshair"
+		"fieldname"			"whayay_crosshair"
         "textAlignment"		"center"
 		"xpos"				"0"
 		"ypos"				"0"
 		"zpos"				"0"
 		"wide"				"f0"
 		"tall"				"480"
-        "enabled"			"0"
+
+
+		"enabled"			"0"									// Set both to "1"
+		"visible"			"0"			  						// to enable
         
-        "visible"			"0"			  			//"1" to enable
+		"labeltext"			"f"           						// Change this to use a different crosshair
         
-		"labeltext"			"f"           			//Change this to use a different crosshair
-													//You can see the list of crosshairs in Crosshairs.png
-		"labeltext"			"f"           			// Change this to use a different crosshair
-													// You can see the list of crosshairs in Crosshairs.png
-        
-        "font"				"CrosshairOLsmall"	    // Use "CrosshairOL" for a crosshair with an outline
-													// or "CrosshairAA" for a smooth crosshair w/o an outline 
+        "font"				"CrosshairOLsmall"	    			// Use "CrosshairOL" for a crosshair with an outline
+																// or "CrosshairAA" for a smooth crosshair w/o an outline 
                                      
-													// You can add "Small" or "Big" at the end to change the size
-													// e.g. "CrosshairOLSmall"
+																// You can add "Small" or "Big" at the end to change the size
+																// e.g. "CrosshairOLSmall"
         
-        "fgcolor"			"ya_crosshair"      	// Color is changed via the clientscheme
-													// in the "/resource/" folder
+        "fgcolor"			"ya_crosshair"      				// Color is changed via the clientscheme
+																// in the "/resource/" folder
 	}
 	
-	/////////////////////////////////////////////////////////////////////////////
-	// Fog's Crosshairs (no flash on damage)
-	/////////////////////////////////////////////////////////////////////////////	
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Knuckle's Crosshairs
+	// ============================================================================================== //
+	// See: \budhud\_Customization\Custom Crosshairs for instructions / images
+	// Valid font sizes: Any number between 10 - 50
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	"knuckles_crosshair"
+	{
+		"controlName"				"CExLabel"
+		"fieldName"					"knuckles_crosshair"
+		"textAlignment"				"center"		
+		"xpos"						"0"
+		"ypos"						"1"
+		"zpos"						"1"
+		"wide"						"f0"
+		"tall"						"480"
+		
+		"visible"					"0"							// Set both to "1"
+		"enabled"					"0"							// to enable
+		
+		"font"						"size:30,outline:off"
+		
+		"labelText"					"a"							// Change this to use a different crosshair		
+
+		"fgcolor"					"knuckles_crosshair"
+	}
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Fog's Crosshairs
+	// ============================================================================================== //
+	// See: \budhud\_Customization\Custom Crosshairs for instructions / images
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	xHairCircle
 	{
@@ -85,7 +115,9 @@
 		"fgcolor"			"fog_crosshair"
 	}
 
-	/////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Fog's Crosshairs - Continued
+	// ============================================================================================== //
 	// The size of the following crosshairs can be changed by modifying the 
 	// number following "Crosshairs", across from "font"	
 	// Valid font sizes: even numbers between 8 and 40
@@ -93,7 +125,7 @@
 	// To add an outline to a crosshair, uncomment the "font" line of text
 	// and add "//" to the "font" line of text below it.
 	// Valid font sizes for outlined crosshairs: 18, 24, 26, 32, 34
-	/////////////////////////////////////////////////////////////////////////////	
+	////////////////////////////////////////////////////////////////////////////////////////////////////	
 	
 	ScatterSpread
 	{
@@ -412,10 +444,10 @@
 		"fgcolor"					"fog_crosshair"
 	}
 		
-	/////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Pilot Crosshair
 	// >> Core Elements
-	/////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	//set "visible" and "enabled" to "1"
 	//This section is for all resolutions
@@ -499,11 +531,11 @@
 		"fillcolor"					"255 255 255 100"
 	}
 	
-	/////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Widescreen Pilot Crosshair
 	// Enable these (along with the "Core" section above)
 	// if you're on a widescreen resolution
-	/////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	"PilotHorizontal1"
 	{
@@ -537,11 +569,11 @@
 		"fillcolor"					"255 255 255 50"
 	}
 	
-	/////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 	// 4 x 3 Pilot Crosshair
 	// Enable these (along with the "core" section above)
 	// if you're on a 4x3 resolution
-	/////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	"PilotHorizontal3"
 	{
@@ -575,10 +607,10 @@
 		"fillcolor"					"255 255 255 50"
 	}
 	
-	/////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 	// DAMAGE INDICATORS
 	// Red indicator when getting hit
-	/////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	HudDamageIndicator
 	{
@@ -594,9 +626,7 @@
 		"MinimumTime" 				"1"                   		//
 	}
 	
-	/////////////////////////////////////////////////////////////////////////////
-	//END CUSTOMIZATION
-	/////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	HudPlayerStatus
 	{
@@ -609,22 +639,24 @@
 		"tall"						"480"
 	}		
 
-	/////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 	// AMMO PLACEMENT CUSTOMIZATION
 	// Moves the entirety of the ammo elements
-	/////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	HudWeaponAmmo		
 	{		
 		"fieldName" 				"HudWeaponAmmo"
 		"visible" 					"1"
 		"enabled" 					"1"
-		"xpos"						"c50"
+		"xpos"						"c40"
 		"ypos"						"c62"
 		"wide"						"200"
 		"tall"						"100"
 	}		
-				
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+
 	HudObjectiveStatus		
 	{		
 		"fieldName" 				"HudObjectiveStatus"
@@ -635,7 +667,7 @@
 		"wide"						"f0"
 		"tall"						"480"
 	}			
-			
+
 	HudKothTimeStatus		
 	{		
 		"fieldName" 				"HudKothTimeStatus"
@@ -643,27 +675,27 @@
 		"enabled" 					"1"
 		"xpos"						"c-100"
 		"ypos"						"0"
-		"wide"						"200"
-		"tall"						"160"
+		"wide"						"175"
+		"tall"						"100"
 				
 		"blue_active_xpos"			"25"
 			
 		"red_active_xpos"			"115"
 	}			
-		
-	HudItemEffectMeter		
-	{		
+
+	HudItemEffectMeter
+	{
 		"fieldName"					"HudItemEffectMeter"
 		"visible"					"1"
 		"enabled"					"1"
-		"xpos"						"r162"
-		"ypos"						"r52"
-		"wide"						"100"
-		"tall"						"50"
+		"xpos"						"0"
+		"ypos"						"0"
+		"wide"						"f0"
+		"tall"						"f0"
 		"MeterFG"					"White"
 		"MeterBG"					"Gray"
 	}		
-			
+
 	HudMedicCharge		
 	{		
 		"fieldName" 				"HudMedicCharge"
@@ -671,8 +703,8 @@
 		"enabled" 					"1"
 		"xpos"						"0"
 		"ypos"						"0"
-		"wide"						"1910"
-		"tall"						"1070"
+		"wide"						"f0"		// 1910
+		"tall"						"f0"		// 1070
 	}			
 
 	HudDemomanCharge			
@@ -680,10 +712,10 @@
 		"fieldName"					"HudDemomanCharge"
 		"visible"					"1"
 		"enabled"					"1"
-		"xpos"						"c-51"
-		"ypos"						"c85" //c88
-		"wide"						"101"
-		"tall"						"100"
+		"xpos"						"0"			// c-51
+		"ypos"						"0"			// c79
+		"wide"						"f0"
+		"tall"						"f0"
 		"MeterFG"					"White"
 		"MeterBG"					"Gray"
 	}				
@@ -728,9 +760,9 @@
 		"enabled"					"1"
 		"xpos"						"c-100"
 		"ypos"						"42"
-		"zpos"						"0"			// draw in front of ammo
-		"wide"						"200"
-		"tall"						"50"
+		"zpos"						"0"
+		"wide"						"f0"
+		"tall"						"f0"
 		"MeterFG"					"Red"
 		"MeterBG"					"Gray"
 	}		
@@ -776,15 +808,15 @@
 	
 	CHudAccountPanel
 	{
-		"fieldName"				"CHudAccountPanel"
-		"xpos"					"c-66"
-		"ypos"					"c100"
-		"wide"					"116"
-		"tall"  				"180"
-		"visible" 				"1"
-		"enabled" 				"1"
-		"PaintBackgroundType"	"2"
-		"textAlignment"			"center"
+		"fieldName"					"CHudAccountPanel"
+		"xpos"						"c-65"
+		"ypos"						"c100"
+		"wide"						"116"
+		"tall"  					"180"
+		"visible" 					"1"
+		"enabled" 					"1"
+		"PaintBackgroundType"		"2"
+		"textAlignment"				"center"
 	}	
 		
 	CHealthAccountPanel	
@@ -803,10 +835,10 @@
 	CDamageAccountPanel	
 	{	
 		"fieldName"					"CDamageAccountPanel"
-		"xpos"						"0"
+		"xpos"						"2"
 		"ypos"						"10"
 		"wide"						"f0"
-		"tall"						"480"
+		"tall"						"f0"
 		"visible" 					"1"
 		"enabled" 					"1"
 		"PaintBackgroundType"		"2"
@@ -860,7 +892,7 @@
 		"visible" 					"0"
 		"enabled" 					"1"
 		"xpos" 						"c-100"
-		"ypos" 						"c68" //c135 
+		"ypos" 						"c55" //c135 
 		"zpos"						"0"
 		"wide" 						"600"
 		"tall" 						"45"
@@ -888,7 +920,7 @@
 		"visible"					"1"
 		"enabled"					"1"
 		"xpos"						"-14"
-		"ypos"						"0"
+		"ypos"						"-60"
 		"wide"						"640"
 		"tall"						"480"
 		
@@ -1052,7 +1084,7 @@
 		"CornerRadius"	 	 		"3"
 		"RightJustify"	 	 		"1"	// If 1, draw notices from the right
 			
-		"TextFont"					"LatoSemibold12"
+		"TextFont"					"bh_Lato12"
 			
 		"TeamBlue"					"HUDBlueTeamSolid"
 		"TeamRed"					"HUDRedTeamSolid"
@@ -1153,8 +1185,8 @@
 		"fieldName" 				"HudCloseCaption"
 		"visible"					"1"
 		"enabled"					"1"
-		"xpos"						"c135"
-		"ypos"						"280"
+		"xpos"						"c123"
+		"ypos"						"279"
 		"wide"						"415" // 110 lowest
 		"tall"						"60"
 				
@@ -1279,8 +1311,8 @@
 		"enabled" 					"1"
 		"xpos" 						"r42"
 		"ypos" 						"355"
-		"wide" 						"32"
-		"tall" 						"32"
+		"wide" 						"25"
+		"tall" 						"25"
 	}
 
 	HudVoiceStatus
@@ -1295,21 +1327,21 @@
 
 		"item_wide"					"135"
 		
-		"show_avatar"				"0"
+		"show_avatar"				"1"
 
 		"show_dead_icon"			"1"
 		"dead_xpos"					"1"
-		"dead_ypos"					"0"
-		"dead_wide"					"16"
-		"dead_tall"					"16"
-				
+		"dead_ypos"					"2"
+		"dead_wide"					"12"
+		"dead_tall"					"12"
+
 		"show_voice_icon"			"1"
-		"icon_ypos"					"0"
-		"icon_xpos"					"15"
-		"icon_tall"					"16"
-		"icon_wide"					"16"
-				
-		"text_xpos"					"33"
+		"icon_ypos"					"2"
+		"icon_xpos"					"2"
+		"icon_tall"					"12"
+		"icon_wide"					"12"
+
+		"text_xpos"					"45"
 	}
 
 	HudHintDisplay
@@ -1325,7 +1357,7 @@
 		"HintSize"					"1"
 		"text_xpos"					"8"
 		"text_ypos"					"8"
-		"center_x"					"0"	// center text horizontally
+		"center_x"					"0"		// center text horizontally
 		"center_y"					"-1"	// align text on the bottom
 	}	
 
@@ -1408,9 +1440,9 @@
 		"fieldName"					"WinPanel"
 		"visible"					"1"
 		"enabled"					"1"
-		"xpos"						"c-100"
-		"ypos"						"260"
-		"wide"						"200"
+		"xpos"						"c-112"
+		"ypos"						"270"
+		"wide"						"500"
 		"tall"						"300"
 	}	
 	
@@ -1577,10 +1609,10 @@
 		"fieldName"					"HudDemomanPipes"
 		"visible"					"1"
 		"enabled"					"1"
-		"xpos"						"c-51"
-		"ypos"						"c105"
-		"wide"						"200"
-		"tall"						"100"
+		"xpos"						"0"
+		"ypos"						"0"
+		"wide"						"f0"
+		"tall"						"f0"
 	}	
 
 	HudTeamGoal
@@ -1767,9 +1799,9 @@
 	{
 		"ControlName"				"EditablePanel"
 		"fieldName"					"HudAchievementTracker"
-		"xpos"						"5"
-		"NormalY"					"12"
-		"EngineerY"					"12"
+		"xpos"						"0"
+		"NormalY"					"120"
+		"EngineerY"					"250"
 		"zpos"						"50"
 		"wide"						"200"
 		"tall"						"280"
@@ -1907,11 +1939,10 @@
 		"tall"						"150"
 	}
 
-
-	"CTFKillStreakNotice"
+	"CTFStreakNotice"
 	{
-		"fieldName"					"CTFKillStreakNotice"
-		"xpos"						"0"			
+		"fieldName"					"CTFStreakNotice"
+		"xpos"						"0"
 		"ypos"						"0"
 		"wide"						"640"
 		"tall"						"480"
@@ -1920,7 +1951,19 @@
 		"bgcolor_override"			"0 0 0 0"
 		"PaintBackgroundType"		"0" // rounded corners
 	}
-
+	
+	CTFFlagCalloutPanel
+	{
+		"fieldName"					"CTFFlagCalloutPanel"
+		"visible" 					"0"
+		"enabled" 					"1"
+		"xpos"						"0"
+		"ypos"						"0"
+		"wide"	 					"40"
+		"tall"	 					"40"
+		"priority"					"40"
+	}
+	
 	"HudMenuTauntSelection"
 	{
 		"fieldName" 				"HudMenuTauntSelection"
@@ -1935,6 +1978,18 @@
 		"PaintBackgroundType"		"0"
 	}
 	
+	"ItemAttributeTracker"
+	{
+		"fieldName" 				"ItemAttributeTracker"
+		"visible" 					"1"
+		"enabled" 					"1"
+		"xpos"						"0"
+		"ypos"						"0"
+		"wide"						"f5"
+		"tall"						"f0"
+		"PaintBackgroundType"		"0"
+	}
+	
 	HudMiniGame
 	{
 		"fieldName" 				"HudMiniGame"
@@ -1944,5 +1999,190 @@
 		"ypos"						"0"
 		"wide"						"f0"
 		"tall"						"480"
+	}
+	
+	"QuestNotificationPanel"
+	{
+		"fieldName"					"QuestNotificationPanel"
+		"visible" 					"1"
+		"enabled"					"1"
+		"xpos"						"0"
+		"ypos"						"0"
+		"wide"						"f0"
+		"tall"						"f0"
+	}
+
+	"QuestLogContainer"
+	{
+		"ControlName"				"EditablePanel"
+		"fieldName" 				"QuestLogContainer"
+		"visible" 					"1"
+		"enabled" 					"1"
+		"xpos"						"0"
+		"ypos"						"0"
+		"wide"	 					"f0"
+		"tall"	 					"f0"
+	}
+
+	"MatchMakingContainer"
+	{
+		"ControlName"				"EditablePanel"
+		"fieldName" 				"MatchMakingContainer"
+		"visible" 					"1"
+		"enabled" 					"1"
+		"xpos"						"0"
+		"ypos"						"0"
+		"wide"	 					"f0"
+		"tall"	 					"f0"
+	}
+
+	HudSpectatorExtras
+	{
+		"fieldName" 				"HudSpectatorExtras"
+		"visible" 					"1"
+		"enabled" 					"1"
+		"xpos"						"0"
+		"ypos"						"0"
+		"wide"						"f0"
+		"tall"						"f0"
+	}
+
+	MatchSummary
+	{
+		"fieldName" 				"MatchSummary"
+		"visible" 					"0"
+		"enabled" 					"1"
+		"xpos"						"0"
+		"ypos"						"0"
+		"wide"						"f0"
+		"tall"						"f0"
+	}
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	// General HUD Reference Information
+	// Borders
+	//	ReplayGrayDialogBorder 	- Contracts, news
+	//	BackpackItemGrayedOut 	- Scoreboard
+	//	bh_b_main 				- Basic gray outline border
+	//	bh_b_loadoutstats		- Same as bh_b_main except bottom line is removed 
+	////////////////////////////////////////////////////////////////////////////////////////////////////	
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	// ** DEV USE ONLY **
+	// Do not enable unless you enjoy grids.
+	////////////////////////////////////////////////////////////////////////////////////////////////////	
+	
+	"bh_dev_v_center"
+	{
+		"ControlName"				"ImagePanel"
+		"fieldName"					"bh_dev"
+		"xpos"						"c-5"
+		"ypos"						"f0"
+		"zpos"						"0"
+		"wide"						"10"
+		"tall"						"f0"
+		"visible"					"0"
+		"enabled"					"0"
+		"fillcolor"					"150 150 150 120"
+	}
+	
+	"bh_dev_v_L1"
+	{
+		"ControlName"				"ImagePanel"
+		"fieldName"					"bh_dev"
+		"xpos"						"c-150"
+		"ypos"						"f0"
+		"zpos"						"0"
+		"wide"						"10"
+		"tall"						"f0"
+		"visible"					"0"
+		"enabled"					"0"
+		"fillcolor"					"150 150 150 120"
+	}
+	
+	"bh_dev_v_L2"
+	{
+		"ControlName"				"ImagePanel"
+		"fieldName"					"bh_dev"
+		"xpos"						"c-295"
+		"ypos"						"f0"
+		"zpos"						"0"
+		"wide"						"10"
+		"tall"						"f0"
+		"visible"					"0"
+		"enabled"					"0"
+		"fillcolor"					"150 150 150 120"
+	}
+	
+	"bh_dev_v_R1"
+	{
+		"ControlName"				"ImagePanel"
+		"fieldName"					"bh_dev"
+		"xpos"						"c140"
+		"ypos"						"f0"
+		"zpos"						"0"
+		"wide"						"10"
+		"tall"						"f0"
+		"visible"					"0"
+		"enabled"					"0"
+		"fillcolor"					"150 150 150 120"
+	}
+	
+	"bh_dev_v_R2"
+	{
+		"ControlName"				"ImagePanel"
+		"fieldName"					"bh_dev"
+		"xpos"						"c290"
+		"ypos"						"f0"
+		"zpos"						"0"
+		"wide"						"10"
+		"tall"						"f0"
+		"visible"					"0"
+		"enabled"					"0"
+		"fillcolor"					"150 150 150 120"
+	}
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////////	
+	
+	"bh_dev_h_center"
+	{
+		"ControlName"				"ImagePanel"
+		"fieldName"					"bh_dev"
+		"xpos"						"f0"
+		"ypos"						"c-5"
+		"zpos"						"0"
+		"wide"						"f0"
+		"tall"						"10"
+		"visible"					"0"
+		"enabled"					"0"
+		"fillcolor"					"150 150 150 120"
+	}
+	
+	"bh_dev_h_U1"
+	{
+		"ControlName"				"ImagePanel"
+		"fieldName"					"bh_dev"
+		"xpos"						"f0"
+		"ypos"						"c-150"
+		"zpos"						"0"
+		"wide"						"f0"
+		"tall"						"10"
+		"visible"					"0"
+		"enabled"					"0"
+		"fillcolor"					"150 150 150 120"
+	}
+	
+	"bh_dev_h_D1"
+	{
+		"ControlName"				"ImagePanel"
+		"fieldName"					"bh_dev"
+		"xpos"						"f0"
+		"ypos"						"c145"
+		"zpos"						"0"
+		"wide"						"f0"
+		"tall"						"10"
+		"visible"					"0"
+		"enabled"					"0"
+		"fillcolor"					"150 150 150 120"
 	}
 }

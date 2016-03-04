@@ -1,5 +1,22 @@
 "Resource/UI/ClassSelection.res"
 {
+	"bh_e_classbg"
+	{
+		"ControlName" 			"ImagePanel"
+		"fieldName" 			"bh_e_classbg"
+		"xpos"					"0"
+		"ypos"					"0"
+		"zpos"					"0"
+		"wide"					"f0"
+		"tall"					"f0"
+		"autoResize" 			"0"
+		"pinCorner"				"0"
+		"visible" 				"1"
+		"enabled" 				"1"
+		"fillcolor" 			"25 25 25 230"
+		"draw_corner_width"		"5"
+		"draw_corner_height"	"5"
+	}
 	"class"
 	{
 		"ControlName"	"Frame"
@@ -35,7 +52,7 @@
 		"ControlName"		"CExImageButton"
 		"fieldName"			"random"
 		"xpos"				"c250"
-		"ypos"				"c-55"
+		"ypos"				"c57"
 		"zpos"				"6"
 		"wide"				"70"
 		"tall"				"100"
@@ -105,7 +122,7 @@
 		"tabPosition"	"0"
 		"labelText"		"#TF_Offense"
 		"textAlignment"	"left"
-		"font"			"LatoSemibold20"
+		"font"			"bh_Lato20"
 		"fgcolor"		"bh_white"
 	}
 	"scout"
@@ -113,7 +130,7 @@
 		"ControlName"		"CExImageButton"
 		"fieldName"			"scout"
 		"xpos"				"c-300"
-		"ypos"				"c-65"
+		"ypos"				"c50"
 		"zpos"				"6"
 		"wide"				"50"
 		"tall"				"100"
@@ -173,7 +190,7 @@
 		"ControlName"		"CExImageButton"
 		"fieldName"			"soldier"
 		"xpos"				"c-250"
-		"ypos"				"c-65"
+		"ypos"				"c50"
 		"zpos"				"6"
 		"wide"				"50"
 		"tall"				"100"
@@ -233,7 +250,7 @@
 		"ControlName"		"CExImageButton"
 		"fieldName"			"pyro"
 		"xpos"				"c-200"
-		"ypos"				"c-65"
+		"ypos"				"c50"
 		"zpos"				"6"
 		"wide"				"50"
 		"tall"				"100"
@@ -304,7 +321,7 @@
 		"tabPosition"	"0"
 		"labelText"		"#TF_Defense"
 		"textAlignment"	"left"
-		"font"			"LatoSemibold20"
+		"font"			"bh_Lato20"
 		"fgcolor"		"bh_white"
 
 	}
@@ -313,7 +330,7 @@
 		"ControlName"		"CExImageButton"
 		"fieldName"			"demoman"
 		"xpos"				"c-110"
-		"ypos"				"c-65"
+		"ypos"				"c50"
 		"zpos"				"6"
 		"wide"				"50"
 		"tall"				"100"
@@ -372,7 +389,7 @@
 		"ControlName"		"CExImageButton"
 		"fieldName"			"heavyweapons"
 		"xpos"				"c-60"
-		"ypos"				"c-65"
+		"ypos"				"c50"
 		"zpos"				"6"
 		"wide"				"50"
 		"tall"				"100"
@@ -431,7 +448,7 @@
 		"ControlName"		"CExImageButton"
 		"fieldName"			"engineer"
 		"xpos"				"c-10"
-		"ypos"				"c-65"
+		"ypos"				"c50"
 		"zpos"				"6"
 		"wide"				"50"
 		"tall"				"100"
@@ -502,7 +519,7 @@
 		"tabPosition"	"0"
 		"labelText"		"#TF_Support"
 		"textAlignment"	"left"
-		"font"			"LatoSemibold20"
+		"font"			"bh_Lato20"
 		"fgcolor"		"bh_white"
 	}
 	"medic"
@@ -510,7 +527,7 @@
 		"ControlName"		"CExImageButton"
 		"fieldName"			"medic"
 		"xpos"				"c78"
-		"ypos"				"c-65"
+		"ypos"				"c50"
 		"zpos"				"6"
 		"wide"				"50"
 		"tall"				"100"
@@ -569,7 +586,7 @@
 		"ControlName"		"CExImageButton"
 		"fieldName"			"sniper"
 		"xpos"				"c128"
-		"ypos"				"c-65"
+		"ypos"				"c50"
 		"zpos"				"6"
 		"wide"				"50"
 		"tall"				"100"
@@ -628,7 +645,7 @@
 		"ControlName"		"CExImageButton"
 		"fieldName"			"spy"
 		"xpos"				"c178"
-		"ypos"				"c-65"
+		"ypos"				"c50"
 		"zpos"				"6"
 		"wide"				"50"
 		"tall"				"100"
@@ -687,10 +704,10 @@
 	{
 		"ControlName"					"CExButton"
 		"fieldName"						"CancelButton"
-		"xpos"							"0"
-		"ypos"							"470"
-		"zpos"							"-50"
-		"wide"							"f0"
+		"xpos"							"6969"
+		"ypos"							"6969"
+		"zpos"							"50"
+		"wide"							"100"
 		"tall"							"10"
 		"autoResize"					"0"
 		"pinCorner"						"2"
@@ -700,7 +717,7 @@
 		"labelText"						"CANCEL (&Q)"
 		"textAlignment"					"center"
 		"Command"						"vguicancel"
-		"font"							"LatoSemibold10"
+		"font"							"bh_Lato10"
 		"paintbackground"				"0"
 		"armedfgcolor_override"			"bh_orange"
 		"defaultfgcolor_override"		"bh_white"
@@ -709,10 +726,10 @@
 	{
 		"ControlName"					"CExButton"
 		"fieldName"						"CancelButton2"
-		"xpos"							"0"
-		"ypos"							"470"
+		"xpos"							"6969"		// c6
+		"ypos"							"6969"		// r10
 		"zpos"							"6"
-		"wide"							"f0"
+		"wide"							"80"
 		"tall"							"10"
 		"autoResize"					"0"
 		"pinCorner"						"2"
@@ -722,23 +739,29 @@
 		"labelText"						"CANCEL (&Q)"
 		"textAlignment"					"center"
 		"Command"						"vguicancel"
-		"font"							"LatoSemibold10"
+		"font"							"bh_Lato10"
 		"paintbackground"				"0"
 		"armedfgcolor_override"			"bh_orange"
 		"defaultfgcolor_override"		"bh_white"
+		
+		"defaultBgColor_override"		"15 15 15 255"
+		"armedBgColor_override"			"25 25 25 255"
+		"depressedBgColor_override"		"25 25 25 255"
+		"defaultFgColor_override"		"bh_white"
+		"armedFgColor_override" 		"bh_white"
+		"depressedFgColor_override" 	"bh_white"
+		"border_default"				"bh_b_loadoutstats"
+		"border_armed"					"bh_b_loadoutstats"
 	}
-	
-	// This broke at different resolutions and I'm too tired right now
-	// to figure out why the c-value isn't working.
 	
 	"EditLoadoutButton" [$WIN32] 
 	{
 		"ControlName"					"CExButton"
 		"fieldName"						"EditLoadoutButton"
-		"xpos"							"0"
-		"ypos"							"0"
+		"xpos"							"6969"		// c-85
+		"ypos"							"6969"		// r10
 		"zpos"							"6"
-		"wide"							"f0"
+		"wide"							"80"
 		"tall"							"10"
 		"autoResize"					"0"
 		"pinCorner"						"2"
@@ -748,12 +771,21 @@
 		"labelText"						"EDIT LOADOUT (&E)"
 		"textAlignment"					"center"
 		"Command"						"openloadout"
-		"font"							"LatoSemibold10"
+		"font"							"bh_Lato10"
 		"paintbackground"				"0"
 		"armedfgcolor_override"			"bh_orange"
 		"defaultfgcolor_override"		"bh_white"
+		
+		"defaultBgColor_override"		"15 15 15 255"
+		"armedBgColor_override"			"25 25 25 255"
+		"depressedBgColor_override"		"25 25 25 255"
+		"defaultFgColor_override"		"bh_white"
+		"armedFgColor_override" 		"bh_white"
+		"depressedFgColor_override" 	"bh_white"
+		"border_default"				"bh_b_loadoutstats"
+		"border_armed"					"bh_b_loadoutstats"
 	}
-
+	
 	"ResetButton" [$WIN32] 
 	{
 		"ControlName"	"CExButton"
@@ -1148,7 +1180,7 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"numScout"
 		"xpos"			"c-300"
-		"ypos"			"185"
+		"ypos"			"300"
 		"zpos"			"5"
 		"wide"			"50"
 		"tall"			"12"
@@ -1159,7 +1191,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numScout%"
 		"textAlignment"	"center"
-		"font"			"LatoSemibold12"
+		"font"			"bh_Lato12"
 		"fgcolor"		"bh_white"
 	}	
 	
@@ -1168,7 +1200,7 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"numSoldier"
 		"xpos"			"c-250"
-		"ypos"			"185"
+		"ypos"			"300"
 		"zpos"			"5"
 		"wide"			"50"
 		"tall"			"12"
@@ -1179,7 +1211,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numSoldier%"
 		"textAlignment"	"center"
-		"font"			"LatoSemibold12"
+		"font"			"bh_Lato12"
 		"fgcolor"		"bh_white"
 	}		
 	
@@ -1188,7 +1220,7 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"numPyro"
 		"xpos"			"c-200"
-		"ypos"			"185"
+		"ypos"			"300"
 		"zpos"			"5"
 		"wide"			"50"
 		"tall"			"12"
@@ -1199,7 +1231,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numPyro%"
 		"textAlignment"	"center"
-		"font"			"LatoSemibold12"
+		"font"			"bh_Lato12"
 		"fgcolor"		"bh_white"
 	}			
 	
@@ -1208,7 +1240,7 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"numDemoman"
 		"xpos"			"c-110"
-		"ypos"			"185"
+		"ypos"			"300"
 		"zpos"			"5"
 		"wide"			"50"
 		"tall"			"12"
@@ -1219,7 +1251,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numDemoman%"
 		"textAlignment"	"center"
-		"font"			"LatoSemibold12"
+		"font"			"bh_Lato12"
 		"fgcolor"		"bh_white"
 	}				
 	
@@ -1228,7 +1260,7 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"numHeavy"
 		"xpos"			"c-60"
-		"ypos"			"185"
+		"ypos"			"300"
 		"zpos"			"5"
 		"wide"			"50"
 		"tall"			"12"
@@ -1239,7 +1271,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numHeavy%"
 		"textAlignment"	"center"
-		"font"			"LatoSemibold12"
+		"font"			"bh_Lato12"
 		"fgcolor"		"bh_white"
 	}					
 	
@@ -1248,7 +1280,7 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"numEngineer"
 		"xpos"			"c-10"
-		"ypos"			"185"
+		"ypos"			"300"
 		"zpos"			"5"
 		"wide"			"50"
 		"tall"			"12"
@@ -1259,7 +1291,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numEngineer%"
 		"textAlignment"	"center"
-		"font"			"LatoSemibold12"
+		"font"			"bh_Lato12"
 		"fgcolor"		"bh_white"
 	}						
 	
@@ -1268,7 +1300,7 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"numMedic"
 		"xpos"			"c78"
-		"ypos"			"185"
+		"ypos"			"300"
 		"zpos"			"5"
 		"wide"			"50"
 		"tall"			"12"
@@ -1279,7 +1311,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numMedic%"
 		"textAlignment"	"center"
-		"font"			"LatoSemibold12"
+		"font"			"bh_Lato12"
 		"fgcolor"		"bh_white"
 	}							
 	
@@ -1288,7 +1320,7 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"numSniper"
 		"xpos"			"c128"
-		"ypos"			"185"
+		"ypos"			"300"
 		"zpos"			"5"
 		"wide"			"50"
 		"tall"			"12"
@@ -1299,7 +1331,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numSniper%"
 		"textAlignment"	"center"
-		"font"			"LatoSemibold12"
+		"font"			"bh_Lato12"
 		"fgcolor"		"bh_white"
 	}						
 	
@@ -1308,7 +1340,7 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"numSpy"
 		"xpos"			"c178"
-		"ypos"			"185"
+		"ypos"			"300"
 		"zpos"			"5"
 		"wide"			"50"
 		"tall"			"12"
@@ -1319,7 +1351,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numSpy%"
 		"textAlignment"	"center"
-		"font"			"LatoSemibold12"
+		"font"			"bh_Lato12"
 		"fgcolor"		"bh_white"
 	}								
 	
@@ -1328,7 +1360,7 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"MvMUpgradeImageScout"
 		"xpos"			"c-270"
-		"ypos"			"30"
+		"ypos"			"150"
 		"zpos"			"10"
 		"wide"			"10"
 		"tall"			"10"
@@ -1573,11 +1605,11 @@
 		"ControlName"	"CTFPlayerModelPanel"
 		"fieldName"		"TFPlayerModel"
 		
-		"xpos"			"c-100"
-		"ypos"			"0"
+		"xpos"			"c-125"
+		"ypos"			"30"
 		"zpos"			"6"		
-		"wide"			"200"
-		"tall"			"200"
+		"wide"			"250"
+		"tall"			"250"
 		
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -1585,7 +1617,7 @@
 		"enabled"		"0"
 		
 		"render_texture"			"0"
-		"fov"						"20"
+		"fov"						"25"
 		"allow_rot"						"0"
 
 		"paintbackground" 			"1"		
@@ -1781,74 +1813,4 @@
 			}				
 		}
 	}	
-	"bh_e_classbg"
-	{
-		"ControlName" 			"ImagePanel"
-		"fieldName" 			"bh_e_classbg"
-		"xpos"					"0"
-		"ypos"					"0"
-		"zpos"					"0"
-		"wide"					"f0"
-		"tall"					"f0"
-		"autoResize" 			"0"
-		"pinCorner"				"0"
-		"visible" 				"1"
-		"enabled" 				"1"
-		"fillcolor" 			"bh_BGStandard"
-		"draw_corner_width"		"5"
-		"draw_corner_height"	"5"
-	}
-	"bh_e_classbg2"
-	{
-		"ControlName" 			"ImagePanel"
-		"fieldName" 			"bh_e_classbg2"
-		"xpos"					"0"
-		"ypos"					"0"
-		"zpos"					"0"
-		"wide"					"f0"
-		"tall"					"f0"
-		"autoResize" 			"0"
-		"pinCorner"				"0"
-		"visible" 				"1"
-		"enabled" 				"1"
-		"fillcolor" 			"bh_BGStandard"
-		"draw_corner_width"		"5"
-		"draw_corner_height"	"5"
-	}
-	"bh_e_loadoutbg"
-	{
-		"ControlName" 			"ImagePanel"
-		"fieldName" 			"bh_e_loadoutbg"
-		"xpos"					"c-45"
-		"ypos"					"-2"
-		"zpos"					"0"
-		"wide"					"90"
-		"tall"					"14"
-		"autoResize" 			"0"
-		"pinCorner"				"0"
-		"visible" 				"1"
-		"enabled" 				"1"
-		"fillcolor" 			"bh_BGDarker"
-		"draw_corner_width"		"5"
-		"draw_corner_height"	"5"
-		"border"				"bh_b_main"
-	}
-	"bh_e_cancelbg"
-	{
-		"ControlName" 			"ImagePanel"
-		"fieldName" 			"bh_e_loadoutbg"
-		"xpos"					"c-30"
-		"ypos"					"r12"
-		"zpos"					"0"
-		"wide"					"60"
-		"tall"					"14"
-		"autoResize" 			"0"
-		"pinCorner"				"0"
-		"visible" 				"1"
-		"enabled" 				"1"
-		"fillcolor" 			"bh_BGDarker"
-		"draw_corner_width"		"5"
-		"draw_corner_height"	"5"
-		"border"				"bh_b_main"
-	}
 }
